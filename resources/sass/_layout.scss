@@ -1,0 +1,46 @@
+%container{
+	padding: $space;
+	display: block;
+	margin: 0px auto;
+	box-sizing: border-box;
+}
+
+.container{
+	@extend %container;
+	max-width: 1000px; 
+}
+
+.container-fluid{
+	@extend %container;
+}
+
+.btn{
+	background-color: $green;
+	padding: $space;
+	display: inline-block;
+	border: 0;
+	&:hover, &:active, &:focus{
+		background-color: #ade889;
+		cursor: pointer;
+	}
+}
+
+.clearfix{
+	@include clearfix();	
+}
+
+%icon{
+	background-repeat: no-repeat;
+	background-size: 35% 35%;
+	background-position: center center;
+}
+
+.icon-copy{
+	@extend %icon;
+	background-image: url('../img/copy-icon.svg');
+}
+
+.icon-download{
+	@extend %icon;
+	background-image: url('../img/download-icon.svg');
+}

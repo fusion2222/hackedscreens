@@ -1,0 +1,229 @@
+/* Site wide styles */
+
+html {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+@media (min-width: 650px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 651px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: #f0f0f0;
+  color: #2b2b2b;
+}
+
+a {
+  color: #94d56b;
+  fill: #94d56b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ade889;
+  fill: #ade889;
+}
+
+.container-fluid,
+.container {
+  padding: 14px;
+  display: block;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.btn {
+  background-color: #94d56b;
+  padding: 14px;
+  display: inline-block;
+  border: 0;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #ade889;
+  cursor: pointer;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.icon-download,
+.icon-copy {
+  background-repeat: no-repeat;
+  background-size: 35% 35%;
+  background-position: center center;
+}
+
+.icon-copy {
+  background-image: url(/images/copy-icon.svg?b0738e823ae4d6e5f19e3b1b7c78602b);
+}
+
+.icon-download {
+  background-image: url(/images/download-icon.svg?a13162d2fde977a8de30b7d61f25c96e);
+}
+
+/* Component specific styles */
+
+.hero {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 650px) {
+  .hero {
+    padding: 55px 14px;
+  }
+}
+
+@media (max-width: 651px) {
+  .hero {
+    padding: 25px 14px;
+  }
+}
+
+@media (min-width: 650px) {
+  .hero--image {
+    position: absolute;
+    top: -16px;
+    right: 0px;
+  }
+}
+
+@media (max-width: 651px) {
+  .hero--image {
+    display: block;
+    margin: 0px auto;
+  }
+}
+
+.hero--paragraph {
+  display: block;
+  position: relative;
+}
+
+.hero--logo {
+  margin-bottom: 45px;
+}
+
+@media (max-width: 651px) {
+  .hero--logo {
+    text-align: center;
+  }
+}
+
+.hero--logo--blackpart {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: #94d56b;
+}
+
+.hero--logo--blackpart .skull_icon {
+  fill: #94d56b;
+  height: 60px;
+  width: 75px;
+  margin-bottom: -15px;
+}
+
+.footer {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 85px;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+.footer .github-icon {
+  width: 25px;
+  margin-right: 5px;
+  margin-bottom: -7px;
+}
+
+.footer .footer--separator {
+  color: gray;
+}
+
+.script-list {
+  list-style-type: none;
+}
+
+.script-list--item {
+  padding: 14px 14px 70px 184px;
+  position: relative;
+}
+
+.script-list--item--title {
+  font-size: 1rem;
+  padding-top: 0;
+  margin-top: -18px;
+}
+
+.script-list--item--description {
+  font-size: 0.8rem;
+  color: #686868;
+  font-style: italic;
+  padding: 0;
+  margin-left: 0;
+}
+
+.script-list--item--image {
+  height: 170px;
+  width: 170px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.script-list--item--copylink {
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-right: 126px;
+  box-sizing: border-box;
+  height: 56px;
+}
+
+.script-list--item--copylink--link {
+  background-color: white;
+  font-size: 0.8rem;
+  padding: 14px 21px;
+  color: #686868;
+  display: block;
+}
+
+.script-list--item--copylink--buttons {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+}
+
+.script-list--item--copylink--btn {
+  width: 56px;
+  height: 100%;
+}
+

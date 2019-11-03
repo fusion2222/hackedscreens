@@ -1,0 +1,15 @@
+.footer{
+	font-size: 0.8rem;
+	text-align: center;
+	margin-top: 85px;
+	background-color: $textColor;
+	color: white;
+	.github-icon{
+		width: 25px;
+		margin-right: 5px;
+		margin-bottom: -7px;
+	}
+	.footer--separator{
+		color: gray;
+	}
+}

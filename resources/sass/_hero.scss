@@ -1,0 +1,51 @@
+.hero{
+	max-width: 1000px;
+	width: 100%;
+	margin: 0px auto;
+	box-sizing: border-box;	
+
+	@media(min-width: $smallBreakpoint){
+		padding: 55px $space;
+	}
+	@media(max-width: $smallBreakpoint + 1px){
+		padding: 25px $space;
+	}
+}
+
+.hero--image{
+	@media(min-width: $smallBreakpoint){
+		position: absolute;
+		top: -16px;
+		right: 0px;
+	}
+	@media(max-width: $smallBreakpoint + 1px){
+		display: block;
+		margin: 0px auto;
+
+	}
+}
+
+.hero--paragraph{
+	display: block;
+	position: relative;
+}
+
+.hero--logo{
+	margin-bottom: 45px;
+	@media(max-width: $smallBreakpoint + 1px){
+		text-align: center;
+	}
+}
+
+.hero--logo--blackpart{
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: black;
+	color: $green;
+	.skull_icon{
+		fill: $green;
+		height: 60px;
+		width: 75px;
+		margin-bottom: -15px;
+	}
+}

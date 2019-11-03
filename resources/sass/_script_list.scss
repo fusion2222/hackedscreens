@@ -1,0 +1,64 @@
+$_imageSize: 170px;
+$_copylinkSize: 56px;
+
+
+.script-list{
+	list-style-type: none;
+}
+
+.script-list--item{
+	padding: $space $space $space * 5 $_imageSize + $space;
+	position: relative;
+}
+
+.script-list--item--title{
+	font-size: 1rem;
+	padding-top: 0;
+	margin-top: -18px;
+}
+
+.script-list--item--description{
+	font-size: 0.8rem;
+	color: #686868;
+	font-style: italic;
+	padding: 0;
+	margin-left: 0;
+
+}
+
+.script-list--item--image{
+	height: $_imageSize;
+	width: $_imageSize;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.script-list--item--copylink{
+	width: 100%;
+	display: block;
+	position: relative;
+	padding-right: 126px;
+	box-sizing: border-box;
+	height: $_copylinkSize;
+}
+
+.script-list--item--copylink--link{
+	background-color: white;
+	font-size: 0.8rem;
+	padding: $space $space + $space / 2;
+	color: #686868;
+	display: block;
+}
+
+.script-list--item--copylink--buttons{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+}
+
+.script-list--item--copylink--btn{
+	width: $_copylinkSize;
+	height: 100%;
+}
