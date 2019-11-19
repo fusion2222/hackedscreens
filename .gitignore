@@ -1,9 +1,14 @@
 .DS_Store
 /node_modules
 /public/hot
+/public/js/
+/public/css/
+/public/images
+/public/mix-manifest.json
 /public/storage
 /storage/*.key
 /vendor
+
 .env
 .env.backup
 .phpunit.result.cache
