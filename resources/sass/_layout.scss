@@ -1,3 +1,9 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 %container{
 	padding: $space;
 	display: block;
@@ -14,33 +20,96 @@
 	@extend %container;
 }
 
-.btn{
-	background-color: $green;
-	padding: $space;
-	display: inline-block;
-	border: 0;
-	&:hover, &:active, &:focus{
-		background-color: #ade889;
-		cursor: pointer;
-	}
-}
-
 .clearfix{
 	@include clearfix();	
 }
 
-%icon{
-	background-repeat: no-repeat;
-	background-size: 35% 35%;
-	background-position: center center;
+
+$col: 323px;
+$screen: 1050px;
+$tablet: 450px;
+
+/* WIDTHS */
+
+/* COLUMNS 
+ * note: max-width is added because of initial mistake in design. 
+ */
+
+@mixin w-25(){
+	max-width: $col;
+	width: 25%;
 }
 
-.icon-copy{
-	@extend %icon;
-	background-image: url('../img/copy-icon.svg');
+@mixin w-33(){
+	max-width: $col;
+	width: 33.33%;
 }
 
-.icon-download{
-	@extend %icon;
-	background-image: url('../img/download-icon.svg');
+@mixin w-50(){
+	max-width: 359px;
+	width: 50%;
+}
+
+@mixin w-66(){
+	max-width: $col * 2 + $space;
+	width: 66.66%;
+}
+
+@mixin w-100(){
+	margin-right: 0;
+	margin-left: 0;
+	max-width: 100%;
+	width: 100%;
+}
+
+.w-25-lg{
+	@include w-25();
+}
+.w-33-lg{
+	@include w-33();
+}
+.w-50-lg{
+	@include w-50();
+}
+.w-66-lg{
+	@include w-66();
+}
+.w-100-lg{
+	@include w-100();
+}
+
+@media(max-width: $screen){
+	.w-25-md{
+		@include w-25();
+	}
+	.w-33-md{
+		@include w-33();
+	}
+	.w-50-md{
+		@include w-50();
+	}
+	.w-66-md{
+		@include w-66();
+	}
+	.w-100-md{
+		@include w-100();
+	}
+}
+
+@media(max-width: $tablet){
+	.w-25-sm{
+		@include w-33();
+	}
+	.w-33-sm{
+		@include w-33();
+	}
+	.w-50-sm{
+		@include w-50();
+	}
+	.w-66-sm{
+		@include w-66();
+	}
+	.w-100-sm{
+		@include w-100();
+	}
 }

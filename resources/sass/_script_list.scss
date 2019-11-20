@@ -38,9 +38,10 @@ $_copylinkSize: 56px;
 	width: 100%;
 	display: block;
 	position: relative;
-	padding-right: 126px;
+	padding-right: 190px;
 	box-sizing: border-box;
 	height: $_copylinkSize;
+	outline: none;
 }
 
 .script-list--item--copylink--link{
@@ -49,6 +50,13 @@ $_copylinkSize: 56px;
 	padding: $space $space + $space / 2;
 	color: #686868;
 	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 0;
+	height: $_copylinkSize;
+	&:focus, &:active{
+		background-color: #fff7b9;
+	}
 }
 
 .script-list--item--copylink--buttons{
@@ -59,6 +67,7 @@ $_copylinkSize: 56px;
 }
 
 .script-list--item--copylink--btn{
+	vertical-align: top;
 	width: $_copylinkSize;
 	height: 100%;
 }

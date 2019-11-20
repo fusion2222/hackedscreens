@@ -1,0 +1,24 @@
+<svg version="1.1" class="skull_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="500px" viewBox="0 0 189 154" enable-background="new 0 0 189 154" xml:space="preserve">
+
+    <!-- top left bone ending -->
+    <rect x="40" y="40" width="12" height="12"/>
+    <polygon points="16,28 28,28 28,16 40,16 40,40 16,40 "/>
+
+    <!-- top right bone ending-->
+    <rect x="136" y="40" width="12" height="12"/>
+    <polygon points="160,16 160,28 172,28 172,40 148,40 148,16 "/>
+    
+    <!-- bottom left bone ending -->
+    <rect x="40" y="100" width="12" height="12"/>
+    <polygon points="16,112 40,112 40,136 28,136 28,124 16,124 "/>
+
+    <!-- bottom right bone ending -->
+    <rect x="136" y="100" width="12" height="12"/>
+    <polygon points="148,112 172,112 172,124 160,124 160,136 148,136 "/>
+
+    <!-- Skull top part -->
+    <polygon points="64,40 124,40 124,52 136,52 136,100 124,100 124,64 100,64 100,76 112,76 112,88 76,88 76,76 88,76 88,64 64,64 64,100 52,100 52,52 64,52 "/>
+
+    <!-- Skull bottom part -->
+    <polygon points="64,88 88,88 88,100 100,100 100,88 124,88 124,124 112,124 112,112 100,112 100,124 88,124 88,112 76,112 76,124 64,124 "/>
+</svg>

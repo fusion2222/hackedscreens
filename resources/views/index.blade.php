@@ -6,10 +6,9 @@
     <title>{{ env('APP_NAME')}}</title>
     <meta name="description" content="List of scripts make websites to look like they have been hacked!"/>
     <!-- TODO: Make SEO friendly setup -->
-    <link href="./css/app.css" rel="stylesheet" type="text/css">
+    <link href="/css/app.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
     <div class="container hero">
         <h1 class="hero--logo">Hacked <span class="hero--logo--blackpart">Screens @svg(skull)</span></h1>
         <p class="hero--paragraph">
@@ -18,8 +17,11 @@
     </div>
 
     <ul class="container script-list">
-        @include('partials.scriptlistitem')
+        @foreach ($scripts as $script)
+            @include('partials.scriptlistitem', ['script' => $script])
+        @endforeach
     </ul>
+    
     <footer class="container-fluid footer">
         <a href="https://github.com/fusion2222/hackedscreens" title="Visit us on GitHub" target="_blank" rel="noopener">
             @svg(github) Visit us on GitHub
@@ -28,6 +30,6 @@
         Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
         from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </footer>
-    <script src="./js/app.min.js" type="text/javascript"></script>
+    <script src="/js/app.js" type="text/javascript"></script>
 </body>
 </html> 

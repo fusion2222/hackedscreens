@@ -34,7 +34,8 @@ class AppServiceProvider extends ServiceProvider
                 'download' => 'download-icon.svg',
                 'copy' => 'copy-icon.svg',
                 'github' => 'github-icon.svg',
-                'skull' => 'skull.svg'
+                'skull' => 'skull.svg',
+                'skull_one_piece' => 'skull_one_piece.svg',
             ];
             
             $filename = $icon_file_map[strtolower($icon)];

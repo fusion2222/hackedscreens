@@ -12,3 +12,8 @@
 */
 
 Route::get('/', 'Page@landingPage')->name('landingPage');
+Route::get('/example/{script?}', 'Page@examplePage')->name('examplePage');
+
+Route::get('/s/{script}', 'Page@script')->name('script');
+
+/* Route::get('/example/{scriptName}', 'Scripts@landingPage')->name('landingPage'); */
