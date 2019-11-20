@@ -1,0 +1,17 @@
+.btn{
+	background-color: $green;
+	padding: $space;
+	box-sizing: border-box;
+	display: inline-block;
+	border: 0;
+	color: #35611a;
+	&:hover, &:active, &:focus{
+		background-color: #ade889;
+		cursor: pointer;
+	}
+}
+
+.btn-big{
+	font-size: 1.2rem;
+	padding: $space $space * 2;
+}
