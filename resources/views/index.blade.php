@@ -22,6 +22,10 @@
         @endforeach
     </ul>
     
+    <section class="sponsors">
+        <b class="sponsors--title">This project was proudly sponsored by:</b>
+        <div class="sponsors--blank">Your logo / banner can be here</div>
+    </section>
     <footer class="container-fluid footer">
         <a href="https://github.com/fusion2222/hackedscreens" title="Visit us on GitHub" target="_blank" rel="noopener">
             @svg(github) Visit us on GitHub

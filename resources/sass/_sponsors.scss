@@ -1,0 +1,22 @@
+.sponsors{
+	margin-top: 65px;
+	background-color: $blue;
+	padding: $space * 2;
+	text-align: center;
+	color: $bgColor;
+}
+
+.sponsors--title{
+	display: block;
+	margin-bottom: 25px;
+}
+
+.sponsors--blank{
+	padding: $space * 2;
+	border: 3px dashed $bgColor;
+	cursor: pointer;
+	background-color: transparent;
+	&:hover{
+		background-color: rgba(255, 255 ,255, 0.1);
+	}
+}
