@@ -9,6 +9,8 @@ if(HckdTools === undefined){
 	// Collision prevention - We dont want any potential crashes.
 	var HckdTools = {
 		// TODO: Make this a separate part of every script.
+		GREEN: '#94d56b',
+
 		SVG_NAMESPACE: 'http://www.w3.org/2000/svg',
 	
 		CSS_PREFIXES: {
