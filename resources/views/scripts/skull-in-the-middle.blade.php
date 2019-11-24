@@ -127,13 +127,20 @@ if(HckdScrns === undefined && HckdTools !== undefined){
 				
 				desc.style.opacity = '1';
 				var promise = audio.play();
-				promise.catch(function(e){
+				try{
+					promise.catch(function(e){
+						/*
+						 *	Exception handling... today's security policy does not allow
+						 *  autoplay when it comes to audio. User must first interact with
+						 *  website using click, or by pressing printable keyboard char.  
+						 */
+					});
+				}catch(e){
 					/*
-					 *	Exception handling... today's security policy does not allow
-					 *  autoplay when it comes to audio. User must first interact with
-					 *  website using click, or by pressing printable keyboard char.  
+					 *  Try Catch for IE, where audio.play() does not return `Promise`,
+					 *  but `null`. promise.catch would therefore throw an exception.
 					 */
-				})
+				}
 
 			}, this.BLINK_FREQUENCY);
 		},
